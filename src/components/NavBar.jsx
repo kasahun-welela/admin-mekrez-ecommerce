@@ -1,7 +1,6 @@
 import React from "react";
 import { BsAlarm } from "react-icons/bs";
 import { Button, Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
-
 function NavBar() {
   return (
     <div>
@@ -29,10 +28,10 @@ function NavBar() {
               <Nav.Link href="dashboard">Dashboard</Nav.Link>
 
               <NavDropdown title="Manage Product" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="add-product">
+                <NavDropdown.Item Link to="add-product/">
                   Add Product
                 </NavDropdown.Item>
-                <NavDropdown.Item href="update-product">
+                <NavDropdown.Item href="/update-product">
                   Update Product
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
